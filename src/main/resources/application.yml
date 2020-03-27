@@ -1,0 +1,12 @@
+
+spring:
+  cq:
+    plugin-list:
+      - com.example.demo.plugin.LogPlugin # 日志，收到私聊消息，群消息，在控制台打印
+      - com.example.demo.plugin.HelloPlugin # Hello 演示了拦截和继续处理下一个插件
+      - com.example.demo.plugin.TestPlugin # 测试 Hello 是否成功拦截
+      # 以上是功能执行顺序
+      # 如果前一个功能返回MESSAGE_BLOCK，则下一个不会继续执行
+      # 如果前一个功能返回MESSAGE_IGNORE，则下一个会继续执行
+server:
+  port: 8081
