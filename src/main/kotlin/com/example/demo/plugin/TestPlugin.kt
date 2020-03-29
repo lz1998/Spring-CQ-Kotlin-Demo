@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component
 @Component
 class TestPlugin : CQPlugin() {
     override fun onPrivateMessage(cq: CoolQ, event: CQPrivateMessageEvent): Int {
-        println("不管受到什么都回复test")
+        println("不管收到什么都回复test")
         cq.sendPrivateMsg(event.userId, "test", false)
         return MESSAGE_IGNORE
     }

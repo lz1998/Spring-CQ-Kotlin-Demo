@@ -9,4 +9,5 @@ spring:
       # 如果前一个功能返回MESSAGE_BLOCK，则下一个不会继续执行
       # 如果前一个功能返回MESSAGE_IGNORE，则下一个会继续执行
 server:
-  port: 8081
+  port: 80
+

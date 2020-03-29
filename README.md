@@ -14,11 +14,11 @@
 - 把cqhttp放在`酷Q Air\app`
 - 配置文件：`酷Q Air\data\app\io.github.richardchien.coolqhttpapi\config.ini`
     ```ini
-    [general]
-    use_http=false
-    use_ws_reverse=true
-    ws_reverse_url=ws://127.0.0.1:8081/ws/cq/
-    ws_reverse_use_universal_client=true
-    enable_heartbeat=true
-    heartbeat_interval=60000
+[general]
+use_http=false
+use_ws_reverse=true
+ws_reverse_url=ws://127.0.0.1:8081/ws/cq/
+ws_reverse_use_universal_client=true
+enable_heartbeat=true
+heartbeat_interval=60000
     ```
